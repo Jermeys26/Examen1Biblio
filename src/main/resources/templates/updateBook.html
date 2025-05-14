@@ -48,7 +48,7 @@
             <select name="libraryId" id="libraryId" required>
                 <option value="">Selecciona un biblioteca</option>
                 <option th:each="library : ${librarys}" th:value="${library.id}" th:text="${library.name}"
-                    th:selected="${book.library != null && library.id == book.library.id}"></option>
+                    th:selected="${book.library != null and library.id == book.library.id}"></option>
             </select>
         </div>
 
